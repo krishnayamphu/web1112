@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      div {
+        width: 200px;
+        height: 150px;
+        padding: 10px;
+        background-color: aquamarine;
+        line-height: 1.4;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        margin: 15px;
+        float: left;
+      }
+      .visible {
+        overflow: visible;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+      img {
+        width: 300px;
+      }
+      .box {
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visible">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        reprehenderit enim officiis, eius, sed facilis exercitationem voluptate
+        necessitatibus perspiciatis molestiae, atque fugiat iusto? Autem et quas
+        repudiandae? Voluptatem, alias? Minima.
+      </p>
+    </div>
+    <div class="hidden">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        reprehenderit enim officiis, eius, sed facilis exercitationem voluptate
+        necessitatibus perspiciatis molestiae, atque fugiat iusto? Autem et quas
+        repudiandae? Voluptatem, alias? Minima.
+      </p>
+    </div>
+    <div class="scroll">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        reprehenderit enim officiis, eius, sed facilis exercitationem voluptate
+        necessitatibus perspiciatis molestiae, atque fugiat iusto? Autem et quas
+        repudiandae? Voluptatem, alias? Minima.
+      </p>
+    </div>
+
+    <div class="box">
+      <img src="../html/pic.png" alt="" />
+    </div>
+  </body>
+</html>
