@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: teal;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline-block;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+      }
+      nav ul li a:hover {
+        background-color: orangered;
+      }
+
+      nav ul ul {
+        background-color: aquamarine;
+        position: absolute;
+        display: none;
+      }
+      nav ul ul li {
+        display: block;
+      }
+      nav ul li:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Services</a>
+          <ul>
+            <li><a href="#">Services 1</a></li>
+            <li><a href="#">Services 2</a></li>
+            <li><a href="#">Services 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li>
+          <a href="#">Blog</a>
+          <ul>
+            <li><a href="#">Services 1</a></li>
+            <li><a href="#">Services 2</a></li>
+            <li><a href="#">Services 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
