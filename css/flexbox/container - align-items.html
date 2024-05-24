@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        border: 1px solid red;
+        margin: 15px;
+        display: flex;
+        height: 50px;
+        width: 200px;
+        float: left;
+      }
+      .col {
+        background-color: green;
+      }
+      .col:nth-child(even) {
+        background-color: orange;
+      }
+      .stretch {
+        align-items: stretch;
+      }
+      .flex-start {
+        align-items: flex-start;
+      }
+      .center {
+        align-items: center;
+      }
+      .flex-end {
+        align-items: flex-end;
+      }
+
+      .baseline {
+        align-items: baseline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row stretch">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+    <div class="row flex-start">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+
+    <div class="row center">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+
+    <div class="row flex-end">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+
+    <div class="row baseline">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+  </body>
+</html>
