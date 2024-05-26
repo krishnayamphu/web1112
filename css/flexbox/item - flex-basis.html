@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        border: 1px solid red;
+        margin: 15px;
+        display: flex;
+      }
+      .col {
+        background-color: green;
+      }
+      .col:nth-child(even) {
+        background-color: orange;
+      }
+      .col:last-child {
+        background-color: purple;
+      }
+      .fb-200 {
+        flex-basis: 200px;
+      }
+      .fb-300 {
+        flex-basis: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col fb-200">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col fb-300">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+  </body>
+</html>
