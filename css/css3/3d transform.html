@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 20px;
+        background-color: blue;
+        color: white;
+        padding: 15px;
+        transition: all 0.5s;
+      }
+      .row {
+        margin: 15px auto;
+        display: block;
+        width: 90%;
+        height: 200px;
+        background-color: transparent;
+        border: 1px solid red;
+        perspective: 500px;
+      }
+      .box1:hover {
+        transform: translateX(50px);
+      }
+      .box2:hover {
+        transform: translateY(50px);
+      }
+      .box3:hover {
+        transform: translateZ(-50px);
+      }
+      .box4:hover {
+        transform: translate3d(50px, 50px, -50px);
+      }
+      .box5:hover {
+        transform: scaleX(2);
+      }
+      .box6:hover {
+        transform: scaleY(2);
+      }
+      .box7:hover {
+        transform: scaleZ(2);
+      }
+      .box8:hover {
+        transform: scale3d(2, 2, 2);
+      }
+      .box9:hover {
+        transform: rotateX(180deg);
+      }
+      .box10:hover {
+        transform: rotateY(180deg);
+      }
+      .box11:hover {
+        transform: rotateZ(45deg);
+      }
+      .box12:hover {
+        transform: rotate3d(1, 1, 0, 45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="box1">translateX</div>
+      <div class="box2">translateY</div>
+      <div class="box3">translateZ</div>
+      <div class="box4">translate3d</div>
+    </div>
+
+    <div class="row">
+      <div class="box5">scaleX</div>
+      <div class="box6">scaleY</div>
+      <div class="box7">scaleZ</div>
+      <div class="box8">scale3d</div>
+    </div>
+
+    <div class="row">
+      <div class="box9">rotateX</div>
+      <div class="box10">rotateY</div>
+      <div class="box11">rotateZ</div>
+      <div class="box12">rotate3d</div>
+    </div>
+  </body>
+</html>

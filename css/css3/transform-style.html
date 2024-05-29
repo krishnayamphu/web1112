@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 20px;
+        background-color: rgba(0, 0, 255, 0.9);
+        color: white;
+        padding: 15px;
+        transition: all 0.5s;
+        position: absolute;
+      }
+      .row {
+        margin: 15px auto;
+        display: block;
+        width: 90%;
+        height: 200px;
+        background-color: transparent;
+        border: 1px solid red;
+        perspective: 500px;
+        transform-style: preserve-3d;
+      }
+      .box1 {
+        transform: rotateX(75deg);
+      }
+      .box2 {
+        transform: rotateY(75deg);
+        background-color: rgba(255, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="box1">rotateX</div>
+      <div class="box2">rotateY</div>
+    </div>
+  </body>
+</html>
