@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      @keyframes rotate {
+        from {
+          transform: rotate3d(1, 1, 1, 0deg);
+        }
+
+        to {
+          transform: rotate3d(-1, 1, 0, 360deg);
+        }
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box-area {
+        /* perspective: 1500px; */
+        transform-style: preserve-3d;
+        animation: rotate 5s linear infinite;
+      }
+
+      .box {
+        width: 400px;
+        height: 400px;
+        font-size: 60px;
+        line-height: 400px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        border: 2px solid aqua;
+      }
+
+      .front {
+        transform: translate3d(-200px, -200px, 200px);
+        background-color: rgba(0, 255, 255, 0.5);
+        background-image: url(../../html/photo.jpg);
+      }
+
+      .back {
+        transform: translate3d(-200px, -200px, -200px);
+        background-color: rgba(170, 0, 255, 0.5);
+      }
+
+      .right {
+        transform: translate3d(0, -200px, 0) rotateY(90deg);
+        background-color: rgba(252, 0, 17, 0.5);
+      }
+
+      .left {
+        transform: translate3d(-400px, -200px, 0) rotateY(90deg);
+        background-color: rgba(97, 19, 136, 0.5);
+      }
+
+      .bottom {
+        transform: translate3d(-200px, 0, 0) rotateX(90deg);
+        background-color: rgba(115, 255, 0, 0.55);
+      }
+
+      .top {
+        transform: translate3d(-200px, -400px, 0) rotateX(90deg);
+        background-color: rgba(255, 183, 0, 0.5);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box-area">
+      <div class="box front">Front</div>
+      <div class="box right">Right</div>
+      <div class="box back">Back</div>
+      <div class="box left">Left</div>
+      <div class="box top">Top</div>
+      <div class="box bottom">Bottom</div>
+    </div>
+  </body>
+</html>
