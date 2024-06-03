@@ -1,0 +1,30 @@
+nav .navbar-nav .nav-link {
+  padding: 5px 0;
+  position: relative;
+  margin: 0 5px;
+}
+nav .navbar-nav .nav-item:hover .nav-link::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #0d6efd;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+nav .navbar-nav .nav-item .nav-link.active::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #0d6efd;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+#heroBanner {
+  height: 100vh;
+  background-color: #0d6efd;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+}
