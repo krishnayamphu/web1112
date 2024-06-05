@@ -28,3 +28,31 @@ nav .navbar-nav .nav-item .nav-link.active::before {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
 }
+
+#progress .progress-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  border: 5px solid white;
+}
+
+#testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/testimonials-bg.jpg");
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+#testimonial .myslide img {
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+  border-radius: 50%;
+  border: 5px solid rgba(204, 204, 204, 0.527);
+}
