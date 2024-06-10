@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <input type="text" id="t1" oninput="countText()" />
+    <p id="p"></p>
+    <script>
+      function countText() {
+        let data = document.getElementById("t1").value;
+        document.getElementById("p").innerHTML = data.length;
+      }
+    </script>
+  </body>
+</html>
