@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      #myModal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+      }
+      .modal-overlay {
+        background-color: rgba(0, 0, 0, 0.582);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-body {
+        background-color: white;
+        max-width: 500px;
+        width: 100%;
+        padding: 15px;
+        position: relative;
+      }
+      .btn-close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="openDialog()">Launch Dialog</button>
+    <div id="myModal">
+      <div class="modal-overlay">
+        <div class="modal-body">
+          <button onclick="closeDialog()" class="btn-close">Close</button>
+          <h2>Modal Title</h2>
+          <p>Type some text here</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openDialog() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      function closeDialog() {
+        document.getElementById("myModal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
