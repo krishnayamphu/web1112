@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <script>
+      const date = new Date(); //object
+      let d = date.getDay() + 1;
+      let da = date.getDate();
+      let mo = date.getMonth() + 1;
+      let y = date.getFullYear();
+
+      let h = date.getHours();
+      let m = date.getMinutes();
+      let s = date.getSeconds();
+      let ms = date.getMilliseconds();
+
+      document.write(d + ", " + da + "-" + mo + "-" + y);
+      document.write("<br>" + h + ":" + m + ":" + s + ":" + ms);
+    </script>
+  </body>
+</html>
