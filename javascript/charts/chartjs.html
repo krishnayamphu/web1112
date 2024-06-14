@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chart</title>
+  </head>
+  <body>
+    <canvas id="myChart" style="width: 100%; max-width: 700px"></canvas>
+    <canvas id="myLineChart" style="width: 100%; max-width: 700px"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <script>
+      const xValues = ["Italy", "France", "Spain", "USA", "Nepal"];
+      const yValues = [50, 29, 30, 25, 35];
+      const barColors = ["red", "green", "blue", "orange", "purple"];
+      //column chart
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "World Wine Production 2018",
+          },
+        },
+      });
+
+      const xValues1 = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+      const yValues1 = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+      //line chart
+      new Chart("myLineChart", {
+        type: "line",
+        data: {
+          labels: xValues1,
+          datasets: [
+            {
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgba(0,0,255,1.0)",
+              borderColor: "rgba(0,0,255,0.1)",
+              data: yValues1,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          scales: {
+            yAxes: [{ ticks: { min: 6, max: 16 } }],
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
