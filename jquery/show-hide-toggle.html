@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <style>
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: teal;
+        margin: 15px 0;
+        padding: 15px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsa
+      quibusdam voluptatibus odio, corporis ratione exercitationem consequatur
+      dolores saepe aut eius tenetur repudiandae hic atque quas eum illo maiores
+      cumque.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        //hide paragraph
+        $("#btn1").click(function () {
+          $("p").hide(1000);
+        });
+
+        //show paragraph
+        $("#btn2").click(function () {
+          $("p").show(1000);
+        });
+
+        //toggle paragraph
+        $("#btn3").click(function () {
+          $("p").toggle(1000);
+        });
+      });
+    </script>
+  </body>
+</html>

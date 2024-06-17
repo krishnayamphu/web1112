@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <style>
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: teal;
+        width: 50%;
+        margin: 15px 0;
+        padding: 15px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Animate</button>
+    <button id="btn2">Stop</button>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsa
+      quibusdam voluptatibus odio, corporis ratione exercitationem consequatur
+      dolores saepe aut eius tenetur repudiandae hic atque quas eum illo maiores
+      cumque.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").animate(
+            {
+              width: "90%",
+              padding: "30px",
+              marginTop: "40px",
+            },
+            5000
+          );
+        });
+
+        $("#btn2").click(function () {
+          $("p").stop(true, true);
+        });
+      });
+    </script>
+  </body>
+</html>
