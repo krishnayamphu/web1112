@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+  </head>
+  <body>
+    <button id="btn1">Get Value</button>
+    <button id="btn2">Set Value</button>
+    <input type="text" value="admin" />
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#btn1").click(function () {
+          alert($("input").val());
+        });
+
+        $("#btn2").click(function () {
+          $("input").val("welcome to jquery");
+        });
+      });
+    </script>
+  </body>
+</html>

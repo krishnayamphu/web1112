@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+  </head>
+  <body>
+    <button id="btn1">Get HTMl Content</button>
+    <button id="btn2">Set HTML Content</button>
+    <p>Hello <strong>World</strong></p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#btn1").click(function () {
+          alert($("p").html());
+        });
+
+        $("#btn2").click(function () {
+          $("p").html("welcome to <em>jquery</em>");
+        });
+      });
+    </script>
+  </body>
+</html>

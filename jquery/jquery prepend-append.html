@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+  </head>
+  <body>
+    <button id="btn1">Before</button>
+    <button id="btn2">After</button>
+    <p>jquery</p>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#btn1").click(function () {
+          $("p").before("<h2>Hello</h2>");
+        });
+
+        $("#btn2").click(function () {
+          $("p").after("<h3>World</h3>");
+        });
+      });
+    </script>
+  </body>
+</html>

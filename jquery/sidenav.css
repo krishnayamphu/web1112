@@ -1,0 +1,39 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: antiquewhite;
+}
+header h2 {
+  text-align: center;
+  padding: 15px 0;
+}
+header span {
+  display: inline-block;
+  background-color: burlywood;
+}
+
+#sidenav {
+  background-color: rgb(255, 124, 49);
+  height: calc(100vh - 76px);
+  padding: 10px 0;
+}
+#sidenav a {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #222;
+}
+#sidenav a:hover {
+  background-color: antiquewhite;
+  transition: all 0.5s;
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: inline-block;
+}
