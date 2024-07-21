@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic Layout</title>
+    <style>
+      header {
+        background-color: purple;
+        padding: 15px;
+      }
+      nav {
+        background-color: tomato;
+      }
+      main {
+        background-color: aqua;
+      }
+      .content {
+        background-color: blue;
+        width: 70%;
+        float: left;
+      }
+      section {
+        background-color: orange;
+        height: 200px;
+      }
+      article {
+        background-color: yellow;
+        height: 200px;
+      }
+      aside {
+        background-color: green;
+        width: 30%;
+        height: 400px;
+        float: left;
+      }
+      footer {
+        background-color: brown;
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <main>
+      <div class="content">
+        <section>Section</section>
+        <article>Article</article>
+      </div>
+      <aside>Aside</aside>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>
