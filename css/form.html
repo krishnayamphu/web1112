@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      form {
+        width: 220px;
+        border: 1px solid #ccc;
+        margin: 30px auto;
+        padding: 15px;
+      }
+      input {
+        display: block;
+        margin-bottom: 15px;
+        width: 92%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        color: rgb(6, 145, 80);
+      }
+      input:focus-visible {
+        outline: none;
+        border: 1px solid rgb(6, 145, 80);
+      }
+      button {
+        padding: 5px 15px;
+        width: 100%;
+        background-color: rgb(6, 145, 80);
+        border: 1px solid rgb(5, 104, 58);
+        color: white;
+      }
+      button:hover {
+        background-color: rgb(5, 104, 58);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+    </form>
+  </body>
+</html>
