@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .box:hover {
+        background-color: blue;
+        border-radius: 50%;
+        transition-property: all;
+        transition-duration: 5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      }
+
+      img {
+        height: 200px;
+        margin-top: 15px;
+      }
+      img:hover {
+        opacity: 0.5;
+        border-radius: 10px;
+        transition: all 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <img src="pic2.jpg" alt="" />
+  </body>
+</html>
