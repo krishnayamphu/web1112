@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      h1::after {
+        content: url("heart.PNG");
+      }
+      h1::before {
+        content: "👋";
+      }
+      p::before {
+        content: open-quote;
+      }
+      p::after {
+        content: close-quote;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe iure enim
+      modi, cupiditate consectetur nobis illo amet accusamus tempore quasi,
+      ratione harum. Eius maiores laboriosam, fuga voluptate est vero amet.
+    </p>
+  </body>
+</html>
