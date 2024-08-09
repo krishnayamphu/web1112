@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .dropdown {
+        background-color: aqua;
+        display: inline-block;
+        margin: 15px;
+      }
+      .dropdown > span {
+        display: block;
+        padding: 5px;
+      }
+      .dropdown-menu {
+        background-color: orange;
+        display: none;
+        opacity: 0;
+      }
+      .dropdown-menu a {
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+        color: black;
+      }
+      .dropdown-menu a:hover {
+        background-color: aquamarine;
+        transition: all 300ms;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        display: inline-block;
+        transition: all 1000ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <span>Dropdown</span>
+      <div class="dropdown-menu">
+        <a href="#">Dropdown Link 1</a>
+        <a href="#">Dropdown Link 2</a>
+        <a href="#">Dropdown Link 3</a>
+      </div>
+    </div>
+  </body>
+</html>
