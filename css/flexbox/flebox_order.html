@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .row {
+        border: 1px solid red;
+        display: flex;
+        margin-bottom: 15px;
+      }
+      .col {
+        background-color: teal;
+        padding: 5px 10px;
+      }
+      .col:nth-child(even) {
+        background-color: orange;
+      }
+      .col:last-child {
+        background-color: purple;
+      }
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
+      }
+      .order-3 {
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col order-2">1</div>
+      <div class="col order-1">2</div>
+      <div class="col order-3">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col order-2">1</div>
+      <div class="col order-3">2</div>
+      <div class="col order-1">3</div>
+    </div>
+  </body>
+</html>

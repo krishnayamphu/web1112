@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #c13342;
+      }
+      nav {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav a.brand-text {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 28px;
+        padding: 10px 0;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline-block;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #ffc400;
+        display: block;
+        padding: 5px 15px;
+      }
+
+      .hero-banner {
+        background-color: tomato;
+        background-image: url(bg.jpeg);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-banner h1 {
+        color: white;
+        font-size: 60px;
+      }
+      .hero-banner p {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="brand-text" href="#">Brand Name</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-banner">
+        <h1>Hero Banner</h1>
+        <p>your slogan here</p>
+      </section>
+    </main>
+  </body>
+</html>
