@@ -1,0 +1,11 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: green;
+}
+
+p {
+  background-color: tomato;
+  padding: 15px;
+}

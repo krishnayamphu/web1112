@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      :root {
+        --primary: #1440cf;
+        --myFont: arial;
+        --text: white;
+        --radius: 10px;
+      }
+      .box1 {
+        height: 100px;
+        background-color: var(--primary, red);
+        margin-bottom: 15px;
+        border-radius: var(--radius);
+      }
+      h1 {
+        color: var(--primary);
+        font-family: var(--myFont);
+      }
+      button {
+        background-color: var(--primary);
+        border: none;
+        padding: 5px 10px;
+        color: var(--text);
+        border-radius: var(--radius);
+      }
+
+      img {
+        height: 200px;
+        display: block;
+        margin-top: 15px;
+        border-radius: var(--radius);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+
+    <h1>Hello World</h1>
+
+    <button>Button</button>
+
+    <img src="team-01.jpg" alt="" />
+  </body>
+</html>
