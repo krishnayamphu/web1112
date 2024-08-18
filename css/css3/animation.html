@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      @keyframes changeBgColor {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blue;
+          border-radius: 50%;
+        }
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        animation-name: changeBgColor;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+      }
+
+      @keyframes moveBox {
+        from {
+          left: 0;
+        }
+        to {
+          left: 80%;
+        }
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        margin-top: 15px;
+        position: relative;
+        animation: moveBox 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box2"></div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+        transition: all 1s;
+        margin: 0 15px;
+      }
+      .container {
+        width: 80%;
+        height: 190px;
+        perspective: 500px;
+        border: 1px solid red;
+        background-color: white;
+        float: none;
+        margin: 30px auto;
+        padding: 15px;
+      }
+      .box1:hover {
+        transform: rotateX(180deg);
+      }
+      .box2:hover {
+        transform: rotateY(180deg);
+      }
+      .box3:hover {
+        transform: rotateZ(180deg);
+      }
+      .box4:hover {
+        transform: rotate3d(1, 0, 1, 180deg);
+      }
+      .box5:hover {
+        transform: scaleX(2);
+      }
+      .box6:hover {
+        transform: scaleY(2);
+      }
+      .box7:hover {
+        transform: scaleZ(2);
+      }
+      .box8:hover {
+        transform: scale3d(2, 2, 2);
+      }
+      .box9:hover {
+        transform: translateX(50px);
+      }
+      .box10:hover {
+        transform: translateY(50px);
+      }
+      .box11:hover {
+        transform: translateZ(-50px);
+      }
+      .box12:hover {
+        transform: translate3d(50px, 50px, -50px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+      <div class="box4">box4</div>
+    </div>
+
+    <div class="container">
+      <div class="box5">box5</div>
+      <div class="box6">box6</div>
+      <div class="box7">box7</div>
+      <div class="box8">box8</div>
+    </div>
+
+    <div class="container">
+      <div class="box9">box9</div>
+      <div class="box10">box10</div>
+      <div class="box11">box11</div>
+      <div class="box12">box12</div>
+    </div>
+  </body>
+</html>

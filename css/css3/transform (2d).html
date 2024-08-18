@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+        margin: 15px;
+        transition: all 1s;
+      }
+      .rotate:hover {
+        transform: rotate(360deg);
+      }
+      .translate:hover {
+        transform: translate(0px, 50px);
+      }
+      .scale:hover {
+        transform: scale(2, 2);
+      }
+      .skew:hover {
+        transform: skew(0deg, -45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rotate">rotate</div>
+    <div class="translate">translate</div>
+    <div class="scale">scale</div>
+    <div class="skew">skew</div>
+  </body>
+</html>
