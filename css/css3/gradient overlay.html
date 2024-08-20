@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .banner {
+        background-color: aqua;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(
+            rgba(255, 0, 0, 0.87),
+            rgba(0, 0, 255, 0.849)
+          ),
+          url(pic1.jpg);
+        background-size: cover;
+      }
+      .banner h1 {
+        font-size: 60px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="banner">
+      <h1>Banner Overlay</h1>
+    </section>
+  </body>
+</html>

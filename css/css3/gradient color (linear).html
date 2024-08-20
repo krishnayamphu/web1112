@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 15px;
+        border: 1px solid green;
+      }
+
+      .box1 {
+        background-image: linear-gradient(red, blue);
+      }
+      .box2 {
+        background-image: -webkit-linear-gradient(
+          left,
+          red,
+          blue
+        ); /* chrome, safari */
+        background-image: -moz-linear-gradient(left, red, blue); /* firefox */
+      }
+      .box3 {
+        background-image: -webkit-linear-gradient(left top, red, blue);
+        background-image: -moz-linear-gradient(left top, red, blue);
+      }
+      .box4 {
+        background-image: linear-gradient(60deg, red, blue);
+      }
+      .box5 {
+        background-image: linear-gradient(
+          90deg,
+          red,
+          blue,
+          green,
+          yellow,
+          purple
+        );
+      }
+      .box6 {
+        background-image: linear-gradient(90deg, red, blue 50%, yellow 50%);
+      }
+      .box7 {
+        background-image: repeating-linear-gradient(45deg, red, blue 25%);
+      }
+      .box8 {
+        background-image: linear-gradient(90deg, red, rgba(0, 0, 255, 0.3));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+    <div class="box6">box6</div>
+    <div class="box7">box7</div>
+    <div class="box8">box8</div>
+  </body>
+</html>
