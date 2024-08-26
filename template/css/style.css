@@ -1,0 +1,15 @@
+/* #primaryNav */
+#primaryNav ul li {
+  position: relative;
+}
+#primaryNav ul li a {
+  padding: 10px 30px;
+}
+#primaryNav ul li a::before {
+  content: "/";
+  position: absolute;
+  right: 0;
+}
+#primaryNav ul li:last-child a::before {
+  content: "";
+}
