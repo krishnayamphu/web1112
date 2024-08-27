@@ -13,3 +13,19 @@
 #primaryNav ul li:last-child a::before {
   content: "";
 }
+
+/* carousel */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* #showcase */
+#showcase .title-bar {
+  background-color: grey;
+  height: 4px;
+  width: 60px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 15px 0;
+}
