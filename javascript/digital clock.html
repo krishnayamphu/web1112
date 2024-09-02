@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <input type="text" id="tbox" />
+    <script>
+      setInterval("clock()", 1);
+
+      function clock() {
+        const date = new Date();
+
+        let h = date.getHours(); //0-23
+        let mi = date.getMinutes();
+        let s = date.getSeconds();
+        let ms = date.getMilliseconds();
+
+        let time = h + ":" + mi + ":" + s + ":" + ms;
+
+        document.getElementById("tbox").value = time;
+      }
+    </script>
+  </body>
+</html>
