@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      .post {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Apply css</button>
+    <button id="btn2">Add Class</button>
+    <button id="btn3">Remove Class</button>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptas.
+      Earum libero explicabo velit dolore vero ratione deserunt totam,
+      cupiditate voluptatem perspiciatis doloribus temporibus minima sequi
+      veniam labore maiores illo!
+    </p>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("h1").css({
+            color: "red",
+          });
+        });
+
+        $("#btn2").click(function () {
+          $("p").addClass("post");
+        });
+
+        $("#btn3").click(function () {
+          $("p").removeClass("post");
+        });
+      });
+    </script>
+  </body>
+</html>
